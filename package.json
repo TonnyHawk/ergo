@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/TonnyHawk/ergo/issues"
   },
-  "homepage": "https://github.com/TonnyHawk/ergo#readme"
+  "homepage": "https://github.com/TonnyHawk/ergo#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
