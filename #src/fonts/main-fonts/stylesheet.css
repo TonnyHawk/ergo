@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Helvetica';
+    font-family: 'helvetica';
     src: url('Helvetica-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: 'Helvetica';
+    font-family: 'helvetica';
     src: url('Helvetica.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: 'Proxima Nova Rg';
+    font-family: 'proxima';
     src: url('ProximaNova-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-    font-family: 'Proxima Nova Rg';
+    font-family: 'proxima';
     src: url('ProximaNova-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;

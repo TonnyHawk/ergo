@@ -1,8 +1,45 @@
-body{
-   background: #000;
-   color: red;
-   font-size: 20px;
+@import 'base/reset';
+
+$black: #272A28;
+$black-light: #787878;
+$black-active: #282828;
+$green: #22A660;
+$gray: rgba(34, 166, 96, 0.05);
+
+.glob-wrap{
    display: flex;
-   align-items: center;
    justify-content: center;
 }
+.container{
+   max-width: 1190px;
+   width: 100%;
+}
+
+.btn{
+   display: block;
+   text-transform: uppercase;
+   font-family: 'proxima';
+   color: white;
+   font-weight: bold;
+   transition: 0.3s;
+   white-space: nowrap;
+   &_small{
+      padding: 12px 22px;
+      font-size: 16px;
+      border-radius: 25px;
+   }
+   &_bg_green{
+      background: linear-gradient(to left, #22A660, #20CF51);
+      &:hover{
+         box-shadow: 0 3px 10px rgba(32, 205, 82, 0.75);
+      }
+   }
+}
+
+.select{
+   border: none;
+   background: transparent;
+}
+
+@import 'module/hamburgers/hamburgers';
+@import 'module/nav/nav';
