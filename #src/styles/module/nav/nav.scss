@@ -1,10 +1,20 @@
 .nav {
-   position: relative;
-   display: flex;
-   align-items: center;
-   padding: 0 30px;
-   @media( max-width: 992px){
-      padding: 0;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 500;
+
+   // .nav__container
+
+   &__container{
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      @media( max-width: 992px){
+         margin: 0;
+      }
    }
 
    // .nav__logo
@@ -36,7 +46,7 @@
          flex-direction: column;
          justify-content: flex-start;
          align-items: center;
-         background: $gray;
+         background: white;
       }
    }
 

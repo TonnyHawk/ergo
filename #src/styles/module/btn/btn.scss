@@ -1,0 +1,36 @@
+.btn{
+   text-transform: uppercase;
+   font-family: 'proxima';
+   color: white;
+   font-weight: bold;
+   transition: 0.3s;
+   white-space: nowrap;
+   display: block;
+   width: max-content;
+   &_small{
+      @extend .btn;
+      padding: 12px 22px;
+      font-size: 16px;
+      border-radius: 25px;
+   }
+   &_big{
+      @extend .btn;
+      padding: 18px 50px;
+      font-size: 16px;
+      font-family: 'proxima';
+      border-radius: 30px;
+   }
+   &_bg_black{
+      background: linear-gradient(270deg, #292929 0%, #6C6C6C 100%);
+      box-shadow: 0px 10px 20px rgba(41, 41, 41, 0.2);
+      &:hover{
+         box-shadow: 0px 10px 20px rgba(32, 205, 82, 0.75);
+      }
+   }
+   &_bg_green{
+      background: linear-gradient(to left, #22A660, #20CF51);
+      &:hover{
+         box-shadow: 0 3px 10px rgba(32, 205, 82, 0.75);
+      }
+   }
+}
