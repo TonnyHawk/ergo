@@ -1,0 +1,10 @@
+#new-way{
+   margin-top: 120px;
+
+   .flag__body{
+      padding-left: 10%;
+      @media(max-width: 960px){
+         padding: 0 0 10%;
+      }
+   }
+}

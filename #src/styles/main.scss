@@ -1,5 +1,6 @@
 @import 'base/reset';
 @import 'base/mixins';
+@import "module/ibg/ibg";
 
 $black: #272A28;
 $black-light: #787878;
@@ -7,17 +8,19 @@ $black-active: #282828;
 $green: #22A660;
 $gray: rgba(34, 166, 96, 0.05);
 
+$flag-body-padding: 0;
+
 .glob-wrap{
    display: flex;
    align-items: center;
    flex-direction: column;
 }
 
-$cont-mx-w: 1190px;
+$cont-mx-w: 1225px;
 .container{
    max-width: $cont-mx-w;
    width: 100%;
-   margin: 0 35px;
+   padding: 0 35px;
 }
 
 @import 'module/btn/btn';
@@ -27,6 +30,73 @@ $cont-mx-w: 1190px;
    background: transparent;
 }
 
+.more-btn {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   background: rgba(34, 166, 96, 0.05);
+   color: #22A660;
+   opacity: 0.75;
+   transition: 0.3s;
+   padding-right: 35px;
+   cursor: pointer;
+
+   // .more-btn__title
+
+   &__title {
+      font-family: 'helvetica';
+      font-size: 10px;
+      text-transform: uppercase;
+      margin-right: 17px;
+      letter-spacing: 1px;
+      @media(max-width: 756px){
+         font-size: 3.5vw;
+         letter-spacing: 5px;
+      }
+   }
+
+   // .more-btn__icon
+
+   &__icon {
+      @media(max-width: 756px){
+         font-size: 6vw;
+      }
+   }
+}
+
+.layer{
+   @include layer;
+}
+.relative{
+   position: relative;
+}
+
 @import 'module/hamburgers/hamburgers';
 @import 'module/nav/nav';
 @import 'module/header/header';
+@import 'module/flag/flag';
+@import 'module/flag/flag-custom';
+@import 'module/video/video';
+
+@import 'layout/sections/sections';
+
+.title {
+   font-family: 'proxima';
+   font-size: 42px;
+   line-height: 100%;
+   color: #22A660;
+   margin-bottom: 30px;
+   font-weight: bold;
+}
+.descr {
+   color: $black;
+   font-family: 'helvetica';
+   font-size: 16px;
+   line-height: 24px;
+   margin-bottom: 20px;
+}
+
+.flex-1{
+   flex: 1 0;
+}
+

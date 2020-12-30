@@ -1,0 +1,42 @@
+.flag {
+   @media(max-width: 960px){
+      flex-direction: column;
+   }
+   // .flag__img
+
+   &__img {
+      display: flex;
+      @media(max-width: 960px){
+         order: 2;
+      }
+      // modes
+
+      &_v_center{
+         @media(max-width: 960px){
+            justify-content: center;
+            align-items: unset;
+         }
+      }
+      &_v_bottom{
+         align-items: flex-end;
+      }
+   }
+
+   // .flag__body
+
+   &__body {
+      @media(max-width: 960px){
+      }
+   }
+
+   &_reverce{
+      .flag{
+         &__img{
+            order: 2;
+         }
+         &__body{
+            order: 1;
+         }
+      }
+   }
+}

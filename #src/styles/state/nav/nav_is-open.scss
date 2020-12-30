@@ -2,8 +2,11 @@
    .nav{
       &__main{
          @media( max-width: 992px){
-            top: 112px;
+            top: 90px;
             box-shadow: 0px 20px 40px 0px #22a66045;
+         }
+         @media(max-width: 550px){
+            top: 17vw;
          }
       }
    }

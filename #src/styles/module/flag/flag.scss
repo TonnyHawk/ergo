@@ -1,0 +1,33 @@
+.flag {
+   display: flex;
+
+   // .flag__img
+
+   &__img {
+      display: flex;
+      // modes
+
+      &_v_center{
+         align-items: center;
+      }
+      &_v_bottom{
+         align-items: flex-end;
+      }
+   }
+
+   // .flag__body
+
+   &__body {
+   }
+
+   &_reverce{
+      .flag{
+         &__img{
+            order: 2;
+         }
+         &__body{
+            order: 1;
+         }
+      }
+   }
+}

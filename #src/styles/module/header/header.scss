@@ -3,16 +3,16 @@
    width: 100%;
    display: flex;
    justify-content: center;
-   margin-top: 100px;
+   margin-top: 50px;
    @media(max-width: 920px){
-      margin-top: 25vw;
+      margin-top: 16vw;
       overflow: hidden;
    }
    @media(max-width: 890px){
-      margin-top: 15vw;
+      margin-top: 10vw;
    }
    @media(max-width: 756px){
-      margin-top: 150px;
+      margin-top: 90px;
    }
 
    // .header__container
@@ -84,8 +84,8 @@
          margin-left: 25%;
       }
       @media(max-width: 560px){
-         margin: -90px auto 0 15vw;
-         width: 100%;
+         margin: -90px auto 0 -13vw;
+         width: 150%;
       }
    }
 
@@ -104,8 +104,9 @@
       bottom: 0;
       left: 3%;
       @media(max-width: $cont-mx-w){
-         width: 45%;
-         bottom: 10%
+         width: 48%;
+         bottom: 10%;
+         left: 10%;
       }
    }
 
@@ -117,105 +118,21 @@
       position: absolute;
       left: 0;
       bottom: 0;
+      z-index: 3;
       @media(max-width: $cont-mx-w){
          height: 15vw;
       }
       @media(max-width: 920px){
-         bottom: 20px;
+         bottom: 30px;
          width: 100%;
          justify-content: center;
          padding: 0;
          height: 170px;
       }
       @media(max-width: 756px){
-         height: 150px;
+         height: 140px;
+         bottom: 50px;
+         font-weight: bold;
       }
    }
 }
-// .badge {
-//    max-height: 270px;
-//    max-width: 270px;
-//    width: 30vw;
-//    height: 30vw;
-//    position: relative;
-//    border-radius: 100%;
-//    background: linear-gradient(180deg, #F8FDFE 0%, #E9F6EF 100%);
-//    border: 1px solid rgba(34, 166, 96, 0.2);
-//    text-align: center;
-//    font-size: 12px;
-//    @media(max-width: $cont-mx-w){
-//       font-size: 1.17vw;
-//    }
-
-//    // .badge__wrap
-
-//    &__wrap{
-//       @include absolute;
-//       padding-top: 26px;
-//       width: 100%;
-//    }
-
-//    // .badge__rate
-
-//    &__rate {
-//       display: flex;
-//       justify-content: center;
-//    }
-
-//    // .badge__star
-
-//    &__star {
-//       font-size: 1.7em;
-//       color: #22A660;
-//       margin: 0 4px;
-//       margin-bottom: 10px;
-//    }
-
-//    // .badge__title
-
-//    &__title {
-//       font-family: 'proxima';
-//       font-size: 2em;
-//       letter-spacing: 0.15em;
-//       text-transform: uppercase;
-//       color: #22A660;
-//       margin-bottom: 14px;
-//    }
-
-//    // .badge__text
-
-//    &__text {
-//       font-family: 'helvetica';
-//       font-size: 1em;
-//       line-height: 2.8em;
-//       color: $black;
-//    }
-// }
-
-.more-btn {
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   background: rgba(34, 166, 96, 0.05);
-   color: #22A660;
-   opacity: 0.75;
-   transition: 0.3s;
-   padding-right: 35px;
-   cursor: pointer;
-
-   // .more-btn__title
-
-   &__title {
-      font-family: 'helvetica';
-      font-size: 10px;
-      text-transform: uppercase;
-      margin-right: 17px;
-      letter-spacing: 1px;
-   }
-
-   // .more-btn__icon
-
-   &__icon {
-   }
-}
-
