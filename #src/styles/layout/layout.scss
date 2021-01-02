@@ -1,0 +1,18 @@
+.glob-wrap{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+$cont-mx-w: 1225px;
+.container{
+   max-width: $cont-mx-w;
+   width: 100%;
+   padding: 0 35px;
+   @media(max-width: 920px){
+      padding: 0 10%;
+   }
+   @media(max-width: 560px){
+      padding: 0 30px;
+   }
+}

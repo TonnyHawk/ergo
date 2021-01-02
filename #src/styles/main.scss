@@ -10,18 +10,7 @@ $gray: rgba(34, 166, 96, 0.05);
 
 $flag-body-padding: 0;
 
-.glob-wrap{
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-}
-
-$cont-mx-w: 1225px;
-.container{
-   max-width: $cont-mx-w;
-   width: 100%;
-   padding: 0 35px;
-}
+@import 'layout/layout';
 
 @import 'module/btn/btn';
 
@@ -99,4 +88,13 @@ $cont-mx-w: 1225px;
 .flex-1{
    flex: 1 0;
 }
+
+.flex-column{
+   display: flex;
+   flex-direction: column;
+}
+
+.w-100{width: 100%;}
+
+@import 'module/img-row-set/img-row-set';
 
