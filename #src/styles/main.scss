@@ -19,39 +19,7 @@ $flag-body-padding: 0;
    background: transparent;
 }
 
-.more-btn {
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   background: rgba(34, 166, 96, 0.05);
-   color: #22A660;
-   opacity: 0.75;
-   transition: 0.3s;
-   padding-right: 35px;
-   cursor: pointer;
-
-   // .more-btn__title
-
-   &__title {
-      font-family: 'helvetica';
-      font-size: 10px;
-      text-transform: uppercase;
-      margin-right: 17px;
-      letter-spacing: 1px;
-      @media(max-width: 756px){
-         font-size: 3.5vw;
-         letter-spacing: 5px;
-      }
-   }
-
-   // .more-btn__icon
-
-   &__icon {
-      @media(max-width: 756px){
-         font-size: 6vw;
-      }
-   }
-}
+@import 'module/more-btn/more-btn';
 
 .layer{
    @include layer;

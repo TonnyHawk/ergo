@@ -9,8 +9,17 @@ $cont-mx-w: 1225px;
    max-width: $cont-mx-w;
    width: 100%;
    padding: 0 35px;
-   @media(max-width: 920px){
+   @media(max-width: 950px){
       padding: 0 10%;
+   }
+   &_type_1{ // some sections needs to change it's padding during the different breakpoint
+      // @extend .container;
+      @media(max-width: 950px){
+         padding: 0 35px;
+      }
+      @media(max-width: 920px){
+         padding: 0 10%;
+      }
    }
    @media(max-width: 560px){
       padding: 0 30px;
