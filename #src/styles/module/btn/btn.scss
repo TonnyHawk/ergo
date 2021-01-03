@@ -7,12 +7,9 @@
    white-space: nowrap;
    display: block;
    width: max-content;
-   &_small{
-      @extend .btn;
-      padding: 12px 22px;
-      font-size: 16px;
-      border-radius: 25px;
-   }
+   padding: 12px 22px;
+   font-size: 16px;
+   border-radius: 25px;
    &_big{
       @extend .btn;
       padding: 18px 50px;

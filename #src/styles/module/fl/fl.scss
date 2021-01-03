@@ -1,0 +1,21 @@
+.fl {
+   display: flex;
+
+   // .fl__col
+
+   &__col {
+      display: flex;
+      flex-direction: column;
+
+      // .fl__col_xy-center
+      &_y-center{
+         @extend .fl__col;
+         justify-content: center;
+      }
+      &_xy-center {
+         @extend .fl__col;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+}

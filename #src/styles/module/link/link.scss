@@ -1,0 +1,21 @@
+.link{
+   width: max-content;
+   display: flex;
+   color: #292929;
+   text-transform: uppercase;
+   font-family: 'proxima';
+   font-weight: bold;
+
+   .icon{
+      font-size: 12px;
+      align-self: center;
+      margin-left: 10px;
+      transition: 0.3s;
+   }
+
+   &:hover{
+      .icon{
+         margin-left: 15px;
+      }
+   }
+}

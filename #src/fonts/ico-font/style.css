@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'custom-icofont';
   src:
-    url('fonts/custom-icofont.ttf?v87hpk') format('truetype'),
-    url('fonts/custom-icofont.woff?v87hpk') format('woff'),
-    url('fonts/custom-icofont.svg?v87hpk#custom-icofont') format('svg');
+    url('fonts/custom-icofont.ttf?ab3i8n') format('truetype'),
+    url('fonts/custom-icofont.woff?ab3i8n') format('woff'),
+    url('fonts/custom-icofont.svg?ab3i8n#custom-icofont') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ic-arrow:before {
+  content: "\e90b";
+  color: #22a660;
+}
 .ic-brain:before {
   content: "\e900";
 }

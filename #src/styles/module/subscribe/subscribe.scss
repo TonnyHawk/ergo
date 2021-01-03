@@ -1,0 +1,23 @@
+.subscribe {
+   text-align: center;
+
+   // .subscribe__icon
+
+   &__icon {
+      margin-bottom: 10px;
+   }
+
+   // .subscribe__descr
+
+   &__descr {
+      font-family: 'helvetica';
+      font-size: 10px;
+      color: #787878;
+      margin-bottom: 20px;
+   }
+
+   // .subscribe__btn
+
+   &__btn {
+   }
+}

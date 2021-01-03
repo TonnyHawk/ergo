@@ -17,3 +17,18 @@
       justify-content: center;
    }
 }
+
+#features{
+   margin-top: 20px;
+   .features-wrap {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .feature{
+      flex: 1 0 auto;
+      @media(max-width: 1060px){
+         flex-basis: 46%;
+      }
+   }
+}
