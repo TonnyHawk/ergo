@@ -5,17 +5,22 @@
    text-transform: uppercase;
    font-family: 'proxima';
    font-weight: bold;
+   transition: 0.3s;
 
    .icon{
       font-size: 12px;
       align-self: center;
       margin-left: 10px;
       transition: 0.3s;
+      position: relative;
+      right: 0;
    }
 
    &:hover{
+      text-shadow: 0 1px 2px rgba(32,205,82,.75);
       .icon{
-         margin-left: 15px;
+         right: -5px;
+         text-shadow: none;
       }
    }
 }

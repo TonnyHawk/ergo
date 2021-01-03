@@ -52,6 +52,12 @@ $flag-body-padding: 0;
    line-height: 24px;
    margin-bottom: 20px;
 }
+.section-title{
+   color: $green;
+   font-family: 'proxima';
+   font-size: 42px;
+   margin-bottom: 40px;
+}
 
 .flex-1{
    flex: 1 0;
@@ -62,11 +68,38 @@ $flag-body-padding: 0;
    flex-direction: column;
 }
 
-.w-100{width: 100%;}
+.c-green{
+   color: $green;
+}
+
+.tt-uppercase{
+   text-transform: uppercase;
+}
+
+.row{
+   display: flex;
+   width: 100%;
+   @media(max-width: 650px){
+      flex-direction: column;
+   }
+}
+
+.col{
+   display: flex;
+   flex-direction: column;
+   flex: 1 0;
+}
+.col-item{
+   padding: 15px;
+   @include square(100%);
+}
 
 @import 'module/img-row-set/img-row-set';
 @import 'module/fl/fl';
 @import 'module/feature/feature';
 @import 'module/link/link';
 @import 'module/subscribe/subscribe';
+@import 'module/card/card';
+
+
 
