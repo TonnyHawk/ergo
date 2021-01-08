@@ -6,14 +6,23 @@
    font-family: 'proxima';
    font-weight: bold;
    transition: 0.3s;
+   flex-wrap: nowrap;
+   position: relative;
 
    .icon{
       font-size: 12px;
       align-self: center;
-      margin-left: 10px;
       transition: 0.3s;
       position: relative;
+      margin-left: 10px;
       right: 0;
+      flex-shrink: 0;
+   }
+
+   &__text{
+      white-space: unset;
+      width: max-content;
+      flex: 0 1 auto;
    }
 
    &:hover{

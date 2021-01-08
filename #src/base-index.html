@@ -10,7 +10,7 @@
 </head>
 <body>
    <div class="glob-wrap">
-      <div class="container container_type_1">
+      <div class="container container_type_1 zin-500">
          @@include('html/nav.html')
       </div>
          @@include('html/header.html')
@@ -20,8 +20,13 @@
          @@include('html/features.html')
          @@include('html/main-news.html')
       </div>
+      <div class="container ending-block-container">
+         @@include('html/ending-block.html')
+      </div>
+      @@include('html/footer.html')
    </div>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="js/bundle.js"></script>
+   <!-- <script src="js/bundle.js"></script> -->
+   <script src="styles/module/nav/nav.js"></script>
 </body>
 </html>

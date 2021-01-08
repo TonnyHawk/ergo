@@ -1,0 +1,20 @@
+.socials {
+   display: flex;
+
+   // .socials__link
+
+   &__link {
+      @include square(30px);
+      @include perfect-center;
+      border: 1px solid rgba(22, 108, 62, 0.25);
+      border-radius: 6px;
+      margin: 0 5px;
+      color: #166C3E;
+      transition: 0.3s;
+
+      &:hover{
+         color: white;
+         border-color: white;
+      }
+   }
+}

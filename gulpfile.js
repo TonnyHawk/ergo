@@ -10,11 +10,13 @@ let {src, dest, series, parallel, watch} = require('gulp'),
 
 let sourceFold = '#src';
 
+let scssEntryFile = 'main.scss';
+
 let path = {
    src: {
       styles: sourceFold + '/styles/',
       css: sourceFold + '/css/',
-      html: sourceFold + '/base-index.html'
+      html: sourceFold + '/base-index.html',
    }
 }
 
@@ -28,7 +30,7 @@ function browsersync(){
 }
 
 function css(){
-   return src(path.src.styles + "main.scss")
+   return src(path.src.styles + scssEntryFile)
          .pipe(sourcemaps.init())
          .pipe(sass().on('error', sass.logError))
          .pipe(autoprefixer(['last 5 versions'])) // добавляем вендорные префиксы

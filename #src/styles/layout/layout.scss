@@ -25,3 +25,25 @@ $cont-mx-w: 1410px;
       padding: 0 30px;
    }
 }
+
+
+.row{
+   display: flex;
+   width: 100%;
+   @media(max-width: 650px){
+      flex-direction: column;
+   }
+}
+
+.col{
+   display: flex;
+   flex-direction: column;
+   flex: 1 0;
+}
+.col-item{
+   padding: 15px;
+   @include square(100%);
+   @media(max-width: 650px){
+      padding: 15px 0;
+   }
+}

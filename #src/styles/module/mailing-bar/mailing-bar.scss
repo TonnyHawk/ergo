@@ -1,0 +1,38 @@
+.mailing-bar {
+   position: relative;
+   display: flex;
+   max-width: 425px;
+   width: 100%;
+
+   // .mailing-bar__field
+
+   &__field {
+      width: 100%;
+      background: #166C3E;
+      border-radius: 25px;
+      border: none;
+      padding: 12px 35px;
+      color: white;
+
+      &::placeholder{
+         font-family: 'proxima';
+         font-size: 16px;
+         line-height: 19px;
+         color: #22A660;
+      }
+   }
+
+   // .mailing-bar__submit
+
+   &__submit {
+      position: absolute;
+      @include square(45px);
+      border-radius: 100%;
+      background: white;
+      color: $green;
+      @include perfect-center;
+      font-size: 28px;
+      right: 0;
+      cursor: pointer;
+   }
+}
