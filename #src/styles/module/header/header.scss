@@ -31,12 +31,23 @@
    &__text-block {
       margin-top: 180px;
       z-index: 2;
+      min-width: 520px;
+      position: relative;
+      @media(max-width: $cont-mx-w){
+         left: 45px;
+      }
+      @media(max-width: 1110px){
+         min-width: 40%;
+         left: 5%;
+      }
       @media (max-width: $cont-mx-w){
          margin-top: 8vw;
          width: 50%;
       }
       @media(max-width: 920px){
          width: 62%;
+         min-width: unset;
+         left: 0;
       }
       @media(max-width: 560px){
          width: 100%;

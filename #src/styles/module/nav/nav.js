@@ -1,10 +1,10 @@
 $(document).ready(function(){
    function Nav(id){
-      this.id = '#'+id;
+      this.id = "#"+id;
       this.itemHeight = 17.6;
       this.transportLastItem = ()=>{ // transports last menu-item to expand menu
-         let lastMenuItem = $(this.id+" .nav__expand-btn").prev().clone().removeClass().addClass('nav__menu-item_expand');
-         $(this.id+" .nav__expand-btn").prev().remove();
+         let lastMenuItem = $(this.id+" .nav__expand").prev().clone().removeClass().addClass('nav__menu-item_expand');
+         $(this.id+" .nav__expand").prev().remove();
          $(this.id+" .nav__expand-menu").append(lastMenuItem);
       };
       this.checkForTwoLinesItem = ()=>{
@@ -31,9 +31,10 @@ $(document).ready(function(){
          }
       };
 
+      let navId = this.id; 
       // adding a click functionality to buttons
       $(this.id+" .nav__toggler").click(function(){
-         $(this.id).toggleClass('nav_is-open');
+         $(navId).toggleClass('nav_is-open');
       });
 
       $(this.id+" .nav__expand-btn").click(function(){
@@ -41,10 +42,8 @@ $(document).ready(function(){
       });
    }
 
-   if($(window).width() > 992){ // works only on pc screens
 
       let topmenu = new Nav('topmenu');
       topmenu.adaptize();
-   }
 
 });

@@ -125,6 +125,13 @@
       }
    }
 
+   // .nav__expand
+
+   &__expand{
+      position: relative;
+   }
+
+
    // .nav__expand-btn
 
    &__expand-btn{
@@ -150,7 +157,7 @@
    &__expand-menu{
       position: absolute;
       right: 20px;
-      bottom: -30px;
+      bottom: -50px;
       box-shadow: 0px 2px 5px darkgray;
       width: 150px;
       padding: 0 0 0 15px;
@@ -180,6 +187,11 @@
       margin: 35px;
       @media( max-width: 992px){
          margin: 15px 0;
+      }
+      &:first-child{
+         @media(max-width: 1070px){
+            margin-right: 0;
+         }
       }
       &:last-child{
          margin-right: 0;
