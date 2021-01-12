@@ -37,6 +37,14 @@
    margin-top: 80px;
 }
 .main-news{
+   .section-title{
+      margin-left: 15px;
+      background: red;
+      display: none;
+      @media(max-width: 650px){
+         margin-left: 0;
+      }
+   }
    &__row{
       @media(max-width: 1060px){
          flex-direction: column;
@@ -52,7 +60,7 @@
 #ending-block-section{
    margin-top: 150px;
    @media(max-width: 920px){
-      margin-top: 90px;
+      margin-top: 40px;
    }
 }
 .ending-block-container{
@@ -152,6 +160,7 @@
       @media(max-width: 700px){
          width: 100%;
          justify-content: center;
+         flex-wrap: wrap;
       }
    }
 
@@ -173,9 +182,9 @@
    // .footer__menu
 
    &__menu {
-      margin-right: 50px;
-      &:last-child{
-         margin-right: 0;
+      margin: 0 50px 0 0;
+      @media(max-width: 700px){
+         margin: 10px 25px;
       }
    }
 

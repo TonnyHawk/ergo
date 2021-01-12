@@ -1,0 +1,14 @@
+.has-wave{
+   position: relative;
+   overflow: visible;
+   &__content{
+      z-index: 2;
+      position: relative;
+   }
+   &__bg{
+      position: absolute;
+      left: -180%;
+      top: -134%;
+      z-index: 1;
+   }
+}

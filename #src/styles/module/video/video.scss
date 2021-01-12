@@ -5,7 +5,7 @@
    height: 40vw;
    border: 2px solid rgba(34, 166, 96, 0.2);
    border-radius: 20px;
-   filter: drop-shadow(0px 20px 40px rgba(34, 166, 96, 0.2));
+   box-shadow: 0px 20px 40px rgba(34, 166, 96, 0.2);
    position: relative;
    @include perfect-center;
    overflow: hidden;
