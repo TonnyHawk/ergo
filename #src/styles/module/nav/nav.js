@@ -1,7 +1,8 @@
 $(document).ready(function(){
    function Nav(id){
       this.id = "#"+id;
-      this.itemHeight = 17.6;
+      let itemFontSize = $(this.id+" .nav__menu-item").css('font-size');
+      this.itemHeight = itemFontSize.substring(0, itemFontSize.length - 2);
       this.transportLastItem = ()=>{ // transports last menu-item to expand menu
          let lastMenuItem = $(this.id+" .nav__expand").prev().clone().removeClass().addClass('nav__menu-item_expand');
          $(this.id+" .nav__expand").prev().remove();
