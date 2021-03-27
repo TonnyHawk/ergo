@@ -8,7 +8,7 @@ let {src, dest, series, parallel, watch} = require('gulp'),
    groupCssMedia = require('gulp-group-css-media-queries'),
    minifiCss = require('gulp-cssnano');
 
-let sourceFold = '#src';
+let sourceFold = 'src';
 
 let scssEntryFile = 'main.scss';
 
